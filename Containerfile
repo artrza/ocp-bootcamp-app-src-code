@@ -1,5 +1,6 @@
 # Nutze das UBI9-Python-Image als Basis
-FROM registry.access.redhat.com/ubi9/python-312
+#FROM registry.access.redhat.com/ubi9/python-312
+FROM registry.access.redhat.com/ubi10/python-314-minimal:1780588517
 
 # Root-Kontext zum Installieren
 USER 0
@@ -17,4 +18,3 @@ EXPOSE 8080
 
 # Standard-Startbefehl
 CMD ["python", "app.py"]
-
